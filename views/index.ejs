@@ -1,3 +1,19 @@
 <%- include("partials/header"); -%>
 
+<%  posts.forEach(function(post){ %>
+
+    <h1><%=post.location%></h1> <br><br>
+    <h1><%=post.price%></h1> <br><br>
+    <h1><%=post.occupation%></h1> <br><br>
+    <h1><%=post.gender%></h1> <br><br>
+    <h1><%=post.singleOrSharing%></h1> <br><br>
+    <p>
+    <%=post.description.substring(0, 100) + " ..."%>
+    <a href="/room/<%=post._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+
+
 <%- include("partials/footer"); -%>

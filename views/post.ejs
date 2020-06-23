@@ -1,3 +1,23 @@
 <%- include("partials/header"); -%>
-
+<div class="postAd">
+  <form class="form" action="/post" method="post" enctype="multipart/form-data">
+    <input type="text" name="location" placeholder="Location"><br><br>
+    <input type="number" name="price" placeholder="Price"><br><br>
+    <select class="" name="occupation">
+      <option value="Student">Student</option>
+      <option value="Employed">Employed</option>
+    </select><br><br>
+    <select class="" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select><br><br>
+    <select class="" name="singleOrSharing">
+      <option value="Single">Single</option>
+      <option value="Sharing">Sharing</option>
+    </select><br><br>
+    <input type="file" class="filestyle" name="roomPic" data-classButton="btn btn-primary" data-input="false" data-classIcon="icon-plus" data-buttonText="Select Room Image"><br><br>
+    <textarea class="form-control" name="description" rows="5" cols="30" placeholder="Enter room description"></textarea><br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 <%- include("partials/footer"); -%>
